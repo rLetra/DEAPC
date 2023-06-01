@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Venda de Bilhetes</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Bilhetes para Eventos</title>
+    <link rel="stylesheet" type="text/css" href="styles/1st-page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao nosso site de venda de bilhetes!</h1>
+        <h1>Compre seus Bilhetes Aqui!</h1>
+        <nav>
+            <a href="paginainicial.html">Home</a> |
+            <a href="login.html">Login</a> |
+            <a href="register.html">Registro</a> |
+            <a href="cart.html">Carrinho de Compras</a>
+        </nav>
     </header>
     <main>
-        <section id="bilhetes">
+        <div class="container">
             <div class="bilhete">
                 <h2>Concerto de Música</h2>
                 <p>Data: 20 de Julho, 2023</p>
                 <p>Preço: €50</p>
-                <button>Comprar Bilhete</button>
+                <label for="quantity1">Quantidade:</label>
+                <input type="number" id="quantity1" min="1" max="10">
+                <button id="concertoBtn" class="btn">Comprar Bilhete</button>
             </div>
             <div class="bilhete">
                 <h2>Jogo de Futebol</h2>
                 <p>Data: 30 de Julho, 2023</p>
                 <p>Preço: €30</p>
-                <button>Comprar Bilhete</button>
+                <label for="quantity2">Quantidade:</label>
+                <input type="number" id="quantity2" min="1" max="10">
+                <button id="jogoBtn" class="btn">Comprar Bilhete</button>
             </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <p>Entre em contato conosco para qualquer dúvida!</p>
-    </footer>
 </body>
 </html>
+
